@@ -1,0 +1,23 @@
+# 1. programming exercise: times five
+
+Please type in a number: 3
+3 times 5 is 15
+
+# answer
+number = input("Please type in a number: "))
+result = int(number)*5
+
+print(f"{number} times 5 is {result}")
+
+# 2. Programming exercise: name and age
+What is your name? Frances Fictitious
+Which year were you born? 1990
+Hi Frances Fictitious, you will be 31 years old at the end of the year 2021
+
+# answer
+# Write your solution here
+name = input("What is your name? ")
+born = int(input("Which year were you born? "))
+year = 2021 - born
+
+print(f"Hi {name}, you will be {year} years old at the end of the year 2021" )
