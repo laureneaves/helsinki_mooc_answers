@@ -56,4 +56,20 @@ sum = number1 + number2 + number3 + number4
 print(f"The sum of the numbers is {sum} and the mean is {sum/4}")
 
 # 7. Food expenditure. Please write a program which estimates a user's typical food expenditure. Answer:
+times_in_cafeteria = int(input("How many times a week do you eat at the student cafeteria?: "))
+price_of_lunch = float(input("The price of a typical student lunch? "))
+cost_of_groceries = float(input("How much money do you spend on groceries in a week?"))
 
+weekly = cost_of_groceries + times_in_cafeteria * price_of_lunch
+
+print("Average food expenditure:")
+print(f"Daily: {weekly / 7} euros")
+print(f"Weekly: {weekly} euros")
+
+# 8. Students in groups. I need to come  back to this with conditional statements. Answer attempt:
+number_of_students = int(input("How many students on the course? "))
+group_size = int(input("Desired group size? "))
+
+number_of_groups = number_of_students / group_size
+
+print(f"Number of groups formed: {number_of_groups}")
