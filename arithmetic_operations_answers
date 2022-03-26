@@ -20,3 +20,40 @@ born = int(input("Which year were you born? "))
 year = 2021 - born
 
 print(f"Hi {name}, you will be {year} years old at the end of the year 2021" )
+
+# 3. seconds in a day: Please write a program which asks the user for a number of days. Answer:
+
+how_many = input("How many days? ")
+days = int(how_many)
+seconds = days * 24 * 60 * 60
+print(f"Seconds in that many days: {seconds}")
+
+# 4. Fix the code: Product. Answer:
+number1 = int(input("Please type in the first number: "))
+number2 = int(input("Please type in the second number: "))
+number3 = int(input("Please type in the third number: "))
+
+product = number1 * number2 * number3
+
+print(f"The product is", product)
+
+# 5. Sum and product. Please write a program which asks the user for two numbers. The program will then print out the sum and the product of the two numbers. Answer:
+number1 = int(input("Number 1: "))
+number2 = int(input("Number 2: "))
+
+print(f"The sum of the numbers:", number1 + number2)
+
+print(f"The product of the numbers:", number1 * number2)
+
+# 6. Sum and mean. Please write a program which asks the user for four numbers. The program then prints out the sum and the mean of the numbers. Answer:
+number1 = int(input("Number 1: "))
+number2 = int(input("Number 2: "))
+number3 = int(input("Number 3: "))
+number4 = int(input("Number 4: "))
+
+sum = number1 + number2 + number3 + number4
+
+print(f"The sum of the numbers is {sum} and the mean is {sum/4}")
+
+# 7. Food expenditure. Please write a program which estimates a user's typical food expenditure. Answer:
+
