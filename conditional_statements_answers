@@ -38,3 +38,65 @@ if number < 10:
 print("Thank you!")
 
 # 5. Boolean. Please write a program which asks the user for two numbers and an operation. If the operation is add, multiply or subtract, the program should calculate and print out the result of the operation with the given numbers. If the user types in anything else, the program should print out nothing. Answer:
+
+def add(num1, num2):
+    return num1 + num2
+
+def subtract(num1, num2):
+    return num1 - num2
+
+def multiply(num1, num2):
+    return num1 * num2
+    
+num_1 = int(input ("Number 1: "))    
+num_2 = int(input ("Number 2: "))
+choice = input("Operation: ")
+
+if choice == 'add':    
+   print (num_1, "+", num_2, "=", add(num_1, num_2))
+
+elif choice == 'subtract':    
+   print (num_1, "-", num_2, "=", subtract(num_1, num_2))    
+    
+elif choice == 'multiply':    
+   print (num_1, "*", num_2, "=", multiply(num_1, num_2))    
+
+else:
+    print()
+    
+# 6. Temperatures. Write a program which asks the user for a temperature in degrees Fahrenheit, and then prints out the same in degrees Celsius. If the converted temperature falls below zero degrees Celsius, the program should also print out "Brr! It's cold in here!". Answer:
+
+temperature = int(input("Please type in a temperature (F): "))
+fahrenheit_to_celsius = (temperature - 32) * 5/9
+print(f"{temperature} degrees Fahrenheit equals {fahrenheit_to_celsius} degrees Celsius")
+
+if fahrenheit_to_celsius < 0:
+    print("Brr! It's cold in here!")
+    
+# 7. Daily wages. Write a program which asks for the hourly wage, hours worked, and the day of the week. The program should then print out the daily wages, which equal hourly wage multiplied by hours worked, except on Sundays when the hourly wage is doubled.Daily wages. Answer:
+
+hourly_wage = float(input("Hourly wage: "))
+hours_worked = int(input("Hours worked: "))
+day = input("Day of the week: ")
+
+daily_wages = hourly_wage * hours_worked
+Sunday = (hourly_wage * hours_worked) * 2
+
+if day == "Sunday":
+    print(f"Daily wages: {Sunday} euros")
+    
+ # 8. Loyalty bonus. This program calculates the end of year bonus a customer receives on their loyalty card. The bonus is calculated with the following formula: (1) If there are less than a hundred points on the card, the bonus is 10 %; (2) In any other case the bonus is 15 %
+points = int(input("How many points are on your card? "))
+if points < 100:
+    points *= 1.1
+    print("Your bonus is 10 %")
+
+else:
+    points *= 1.15
+    print("Your bonus is 15 %")
+
+print("You now have", points, "points")
+
+# 9. What to wear tomorrow.
+
+# 10. Solving a quadratic equation
