@@ -11,3 +11,17 @@ else:
     print("Have a nice day!")
     
 # Number of characters. Answer:
+
+word = input("Please type in a word: ")
+length = len(word)
+
+print("There are", length, "letters in the word", word)
+
+# Typecasting. Answer:
+
+temperature = float(input("Please type in a temperature: "))
+integer_part = int(temperature)
+decimal_part = temperature - integer_part
+
+print(f"Integer part: {integer_part}")
+print(f"Decimal part: {decimal_part}")
