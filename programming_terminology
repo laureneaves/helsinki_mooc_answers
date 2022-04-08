@@ -10,18 +10,18 @@ else:
     print(number, "must be my lucky number!" )
     print("Have a nice day!")
     
-# Number of characters. Answer:
+# Number of characters. Please write a program which asks the user for a word and then prints out the number of characters, if there was more than one typed in. Answer:
 
 word = input("Please type in a word: ")
 length = len(word)
 
 print("There are", length, "letters in the word", word)
 
-# Typecasting. Answer:
+# Typecasting. Please write a program which asks the user for a floating point number and then prints out the integer part and the decimal part separately. Answer:
 
 temperature = float(input("Please type in a temperature: "))
 integer_part = int(temperature)
 decimal_part = temperature - integer_part
 
 print(f"Integer part: {integer_part}")
-print(f"Decimal part: {decimal_part}")
+print(f"Decimal part: {decimal_part:.2f}") 
