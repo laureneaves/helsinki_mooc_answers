@@ -1,1 +1,64 @@
+# 1. Please write a program which asks for the user's age. If the age is not plausible, that is, it is under 5 or something that can't be an actual human age, the program should print out a comment. Answer:
 
+age = int(input("What is your age? "))
+if age < 0:
+    print("That must be a mistake")
+elif age < 5:
+    print("I suspect you can't write quite yet...")
+else:
+    print("Ok, you're " + str(age) + " years old")
+    
+# 2. Please write a program which asks for the user's name. If the name is Huey, Dewey or Louie, the program should recognise the user as one of Donald Duck's nephews. In a similar fashion, if the name is Morty or Ferdie, the program should recognise the user as one of Mickey Mouse's nephews. Answer:
+    
+    name = input("Please type in your name: ")
+
+if name == "Huey" or name == "Dewey" or name == "Louie":
+    print("I think you might be one of Donald Duck's nephews.")
+
+elif name == "Morty" or name == "Ferdie":
+    print("I think you might be one of Mickey Mouse's nephews.")
+
+else:
+    print("You're not a nephew of any character I know of.")
+    
+# 3. Please write a program which asks for the amount of points received and then prints out the grade attained according to the table. Answer:
+points = int(input("How many points [0-100]: "))
+
+if points <= 0: 
+    print("Grade: impossible!")
+
+elif points >= 0 and points <= 49: 
+    print("Grade: fail")
+
+elif points >= 50 and points <= 59:
+    print("Grade: 1")
+
+elif points >= 60 and points <= 69:
+    print("Grade: 2")
+
+elif points >= 70 and points <= 79:
+    print("Grade: 3")
+    
+elif points >= 80 and points <= 89:
+    print("Grade: 4")
+    
+elif points >= 90 and points <= 100:
+    print("Grade: 5")
+
+elif points > 100:
+    print("impossible!")
+    
+# 4. Please write a program which asks the user for an integer number. If the number is divisible by three, the program should print out Fizz. If the number is divisible by five, the program should print out Buzz. If the number is divisible by both three and five, the program should print out FizzBuzz. Answer:
+
+number = int(input("Number: "))
+
+if number % 3 == 0 and number % 5 == 0:
+    print("FizzBuzz")
+
+# this condition must be first because in if else statements, the first condition that is satisfied will be executed
+
+elif number % 3 == 0:
+    print("Fizz")
+
+elif number % 5 == 0:
+    print("Buzz")
