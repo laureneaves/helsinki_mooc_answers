@@ -1,1 +1,6 @@
-# 1. Print numbers. Answers:
+# 1. Print numbers. Write a program which prints out all the even numbers between two and thirty, using a loop. Print each number on a separate line.Answers:
+
+number = 2
+while number <= 30:
+    print(number)
+    number += 2
