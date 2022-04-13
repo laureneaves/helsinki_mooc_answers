@@ -50,4 +50,38 @@ if attempts == 1:
     print("Correct! It only took you one single attempt!")
 else:
     print(f"Correct! It took you {attempts} attempts")
+    
+# 5. Please write a program which keeps asking the user for words. If the user types in end, the program should print out the story the words formed, and finish. Answer:
+
+story = ""
+previous = ""
+while True:
+    word = input("Please type in a word: ")
+    if word == "end" or word == previous:
+        break
+    story += word + " "
+    previous = word
  
+print(story)
+
+# 6. Program asks for integer numbers. It prints out how many numbers were typed in.  It prints out the sum of all numbers typed in. It prints out the mean of the numbers. 0 isn't included in this. It prints out statistics on how many numbers were positive and how many were negative. Answer:
+
+print("Please type in integer numbers. Type in 0 to finish.")
+numbers = 0
+sum = 0
+positives = 0
+ 
+while True:
+    number = int(input("Number: "))
+    if number == 0:
+        break
+    numbers += 1
+    sum += number
+    if number>0:
+        positives += 1
+ 
+print("Numbers typed in", numbers)
+print("The sum of the numbers is", sum)
+print("The mean of the numbers is", sum/numbers)
+print("Positive numbers", positives)
+print("Negative numbers", numbers-positives)
