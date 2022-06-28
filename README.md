@@ -1,2 +1,1 @@
-# helsinki_mooc_answers
-programming answers
+Answers to the University of Helsinki's Python Programming course
