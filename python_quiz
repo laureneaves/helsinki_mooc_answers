@@ -1,4 +1,4 @@
-// test python quiz for front end website
+// test python quiz
 
 strength = input("Select a strength: medium, dark or extra dark")
                   
