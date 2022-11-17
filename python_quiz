@@ -1,0 +1,10 @@
+// test python quiz for front end website
+
+strength = input("Select a strength: medium, dark or extra dark")
+                  
+if strength == "medium":
+    print("Kenyan Medium Roast")
+elif strength == "dark":
+    print("Paraguayan Dark Roast")
+elif strength == "extra dark":
+    print("Nicaragua Extra Dark")
